@@ -210,10 +210,6 @@ while not done:
             y1=y
 
 
-
-
-   
-
     pts.appendleft(center)
     # loop over the set of tracked points
     for i in range(1, len(pts)):
