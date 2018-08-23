@@ -85,7 +85,7 @@ while True:
 
     registration.apply(color, depth, undistorted, registered,bigdepth=bigdepth,color_depth_map=color_depth_map)
 
-    #color = imutils.resize(color, width=640)
+    color = imutils.resize(color, width=640)
     color = cv2.resize(color.asarray(),(int(1920 / 3), int(1080 / 3)))
     blurred = cv2.GaussianBlur(color, (11, 11), 0)
     hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
